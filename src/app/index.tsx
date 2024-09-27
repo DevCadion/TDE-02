@@ -1,10 +1,17 @@
-import { Text, View, StyleSheet } from "react-native";
-import { Page } from "../pages/login";
+import React from "react";
+import { SafeAreaView, StyleSheet } from "react-native";
+import Translator from "@/src/components/Translator";
 
-//importar os modais e pages aqui.
-
-export default function Index() {
+export default function App() {
   return (
-      <Page/>
+    <SafeAreaView style={styles.container}>
+      <Translator />
+    </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
